@@ -1,0 +1,103 @@
+body {
+  font-family: 'Helvetica Neue'; 
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #333;
+  margin: 20px 0;
+}
+
+.tarefas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#nova-tarefa {
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-family: 'Helvetica Neue'; 
+  outline: none;
+  border-bottom: none;
+}
+
+#adicionar-tarefa {
+  padding: 10px 20px;
+  background-color: #db62ca;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px; 
+  font-family: 'Helvetica Neue';
+  margin-left: 10px;
+}
+
+#adicionar-tarefa:hover {
+  background-color: #b754aa;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+li:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.02);
+}
+
+li span {
+  font-size: 16px;
+  flex: 1;
+  padding-left: 10px;
+  text-align: left;
+}
+
+li input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%; 
+  appearance: none; 
+  background-color: #ccc; 
+  cursor: pointer;
+}
+
+li input[type="checkbox"]:checked {
+  background-color: #db62ca;
+}
+
+li.concluida {
+  background-color: #f5f5f5;
+  text-decoration: line-through;
+  color: #777;
+  transform: scale(1.02);
+}
+
+#lista-de-tarefas {
+  margin-top: 20px;
+}
